@@ -1,0 +1,225 @@
+/* 
+Ruleset for index.html
+ */
+@import './global.css';
+
+/* top prtion of the page containing
+ nav bar and the pig pic next with caption on the side */
+
+
+.top {
+    height: 100vh;
+
+}
+
+.banner {
+    background-color: #FFF0ED;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+.written {
+    align-self: center;
+    margin-right: 10rem;
+    margin-bottom: 11rem;
+}
+
+.written p {
+    margin: 1.8rem;
+}
+
+
+
+.pic {
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+
+.pic img {
+    display: inline-block;
+    height: 45rem;
+    
+}
+
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #FFF;
+    background-color: #5BACC3;
+    height: 4rem;
+    width:  12rem;
+    margin: 1.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem;
+    
+}
+
+
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: auto;
+    padding: 1.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+
+.our-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem;
+    align-items: center;
+    border: 0.5px solid #FFF;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgb(159, 155, 155);
+    width: 23vw;
+}
+
+
+.card-wrap {
+    display: flex;
+    justify-content:center
+}
+
+
+
+/* .img-wrap {
+    height: 280px;
+    object-fit: cover;
+     overflow: hidden;
+
+} */
+
+.img-wrap img {
+    height: 410px;
+}
+
+
+
+
+.light-gray {
+    background-color: #F7F7F7;
+}
+
+.btn-2 {
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+    background-color: #5BACC3;
+    color: #FFF;
+    margin: 2rem;
+    padding: 1rem 3rem;
+} 
+
+
+#mid h3{
+    
+    font-size: 2.7rem;
+    font-weight: 300;
+    margin: 1.5rem;
+       
+}
+
+
+#mid p {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 1rem;
+    color: #5BACC3;
+}
+
+
+#high-light {
+    color: #5BACC3;
+}
+
+
+
+.discount {
+    height: 50vh;
+    display: flex;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+
+}
+
+.discount p {
+    height: fit-content;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 3rem 6rem;
+    background-color: #393939;
+    color: #FFF;
+    text-align: center;
+}
+
+.discount p span {
+    font-weight: 700;
+}
+
+.foot {
+    display: flex;
+
+}
+
+.foot img {
+    height: 70px;
+}
+
+
+.sub-foot {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.sub-foot p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#logos {
+    display: inline-block;
+}
+
+.hours span {
+    font-weight: 700;
+}
+
+.sub-foot h3 {
+    margin-left: 0;
+}
+
+#address {
+    margin-left: 15rem;
+}

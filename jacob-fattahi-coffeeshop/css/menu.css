@@ -1,0 +1,131 @@
+/* 
+Ruleset for menumargin: auto;.html
+ */
+
+@import './global.css';
+
+
+
+
+/* 
+nav bar + pic + menu bar
+*/
+.top {
+    height: 100%;
+    background-color: #fff;}
+
+/*
+3 sec
+ */
+.buttom {
+    height: auto;
+}
+
+/* 
+Style for nav bar and menu bar section
+*/
+.upper-top {
+    height: 90vh;
+    background-color: #fff;
+    
+}
+
+
+
+/* div withbig coffee circle picture */
+.coffee-circle {
+    background-image: url(../assets/images/coffee-circle.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.black-rectangle {
+    background-color: #393939;
+    height: 25%;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.black-rectangle h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: auto;
+
+}
+
+/* HOT DRINKS | COLD DRINKS | PASTRIES */
+.menu-bar {
+    height: 10vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* HOT DRINKS | COLD DRINKS | PASTRIES */
+#bar-paragraph {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    
+
+}
+
+/* HOT DRINKS | COLD DRINKS | PASTRIES */
+#bar-paragraph span {
+    color: #5BACC3;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: bolder;
+    position: inline-block;
+
+}
+
+
+.center {
+    text-align: center;
+}
+
+#shop-now {
+    color: #5BACC3;
+}
+
+
+
+.sec-h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: auto;
+    padding: 1.8rem;
+}
+
+.sec-h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+.sec-p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: auto;
+    margin: 1rem;
+}
+
+.sec-italic {
+    font-style: italic;
+}
+
+
+.sec {
+    padding: 1.5rem;
+}
+
+
+.sec span {
+    font-style: normal;
+}
