@@ -1,0 +1,292 @@
+/*
+Global Style Ruleset 
+
+*/
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 
+Style for nav bar in all pages
+*/
+.nav-container {
+  display: inline-block;
+}
+
+.nav-bar {
+  background-color: #FFF0ED;
+  text-decoration: none;
+  color: #393939;
+  /* nav bar logo */
+  /* "nitro" inside nav bar  */
+  /* nav bar options */
+}
+.nav-bar__img {
+  width: 70px;
+}
+.nav-bar__h1 {
+  color: #393939;
+  font-size: 4.5rem;
+  font-weight: 300;
+  display: inline-block;
+  margin: 1.8rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+.nav-bar__ul {
+  display: inline-block;
+}
+.nav-bar__li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+/* global back ground colors */
+.pink {
+  background-color: #FFF0ED;
+}
+
+.white {
+  background-color: #fff;
+}
+
+/*nitro-blue text*/
+.high-light-text {
+  color: #5BACC3;
+}
+
+.graphite-text {
+  color: #393939;
+}
+
+.bld {
+  font-weight: 700;
+}
+
+/* 
+Ruleset for index.html
+ */
+/* top prtion of the page containing
+ nav bar and the pig pic next with caption on the side */
+.top {
+  height: 100vh;
+}
+
+.banner {
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+.banner__img {
+  display: inline-block;
+  height: 45rem;
+}
+.banner__btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #5BACC3;
+  height: 4rem;
+  width: 12rem;
+  margin: 1.8rem;
+}
+
+.written {
+  align-self: center;
+  margin-right: 10rem;
+  margin-bottom: 11rem;
+}
+.written__p {
+  margin: 1.8rem;
+}
+.written__pic {
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: auto;
+  padding: 1.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1.5rem;
+}
+
+.our-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-products .our-products__h3 {
+  margin: 0;
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+.our-products .our-products__p {
+  display: inline-block;
+  font-size: 2.7rem;
+  margin: 1rem;
+  color: #5BACC3;
+}
+
+.h3-and-p {
+  display: inline-block;
+  margin: 3rem 1rem;
+}
+
+.h3-and-p__p {
+  margin: 0;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem;
+  align-items: center;
+  border: 0.5px solid #FFF;
+  background-color: #FFF;
+  border-radius: 12px;
+  box-shadow: 1.5px 2px 7px 0px rgb(181, 177, 177);
+  width: 23vw;
+}
+
+.img-wrap__img {
+  height: 410px;
+  margin: 2rem;
+}
+
+.upper-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lower-card {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.5px solid #FFF0ED;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.light-gray {
+  background-color: #F7F7F7;
+}
+
+.btn-2 {
+  font-size: 2rem;
+  width: auto;
+  height: auto;
+  background-color: #5BACC3;
+  color: #FFF;
+  margin: 2rem;
+  padding: 1rem 3rem;
+}
+
+.discount {
+  height: 50vh;
+  display: flex;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.discount p {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 3rem 6rem;
+  background-color: #393939;
+  color: #FFF;
+  text-align: center;
+}
+
+.discount p span {
+  font-weight: 700;
+}
+
+.foot {
+  display: flex;
+}
+
+.foot img {
+  height: 70px;
+}
+
+.sub-foot {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sub-foot p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#logos {
+  display: inline-block;
+}
+
+.hours span {
+  font-weight: 700;
+}
+
+.sub-foot h3 {
+  margin-left: 0;
+}
+
+#address {
+  margin-left: 15rem;
+}
+
+.gray {
+  color: #909090;
+}/*# sourceMappingURL=landing.css.map */

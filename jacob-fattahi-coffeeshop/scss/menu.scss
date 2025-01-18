@@ -1,3 +1,5 @@
+@use './partials/global' as *;
+
 /* 
 Ruleset for menumargin: auto;.html
  */
@@ -12,7 +14,8 @@ nav bar + pic + menu bar
 */
 .top {
     height: 100%;
-    background-color: #fff;}
+    background-color: #fff;
+}
 
 /*
 3 sec
@@ -27,7 +30,7 @@ Style for nav bar and menu bar section
 .upper-top {
     height: 90vh;
     background-color: #fff;
-    
+
 }
 
 
@@ -63,7 +66,7 @@ Style for nav bar and menu bar section
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /* HOT DRINKS | COLD DRINKS | PASTRIES */
@@ -71,7 +74,7 @@ Style for nav bar and menu bar section
     color: white;
     text-align: center;
     font-size: 1.8rem;
-    
+
 
 }
 

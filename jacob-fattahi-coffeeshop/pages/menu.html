@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../scss/menu.css" />
     <title>Coffee Shop - Home</title>
   </head>
   <body>
@@ -17,14 +17,14 @@
         <nav class="nav-bar">
           <div class="nav-container">
             <a href="../index.html">
-              <img src="../assets/logos/coffee-beans-logo-and-footer.svg"
+              <img class="nav-bar__img" src="../assets/logos/coffee-beans-logo-and-footer.svg"
               alt="cofee beans logo">
+              <h1 class="nav-bar__h1">nitro</h1>
             </a>  
-              <h1>nitro</h1>
-            <ul class="nav-links">
-              <li><a class="graphite-text" href="../index.html">ABOUT</a></li>
-              <li><a class="graphite-text" href="../pages/menu.html">MENU</a></li>
-              <li id="shop-now"><a href="./menu.html">SHOP NOW</a></li>
+            <ul class="nav-bar__ul nav-links">
+              <li class="nav-bar__li"><a class="graphite-text" href="../index.html">ABOUT</a></li>
+              <li class="nav-bar__li"><a class="graphite-text" href="../pages/menu.html">MENU</a></li>
+              <li class="nav-bar__li high-light-text"><a href="./menu.html">SHOP NOW</a></li>
             </ul>
           </div>
         </nav>
@@ -42,9 +42,10 @@
 
       <div class="menu-bar">
         <p id="bar-paragraph">
-          <span>|&nbsp;&nbsp;</span>HOT
-          DRINKS<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>COLD
-          DRINKS<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>PASTRIES&nbsp;&nbsp;
+          <span>|&nbsp;&nbsp;</span><a href="#hot-drinks">HOT
+          DRINKS</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="#cold-drinks">COLD
+          DRINKS</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="#pastries
+            ">PASTRIES</a>&nbsp;&nbsp;
         </p>
       </div>
     </div>
@@ -53,7 +54,7 @@
 
 
     <div class="buttom">
-        <section class="sec pink center">
+        <section id="hot-drinks" class="sec pink center">
             <h2 class="sec-h2">Hot Drinks</h2>
             <h3 class="sec-h3">In-house brew</h3>
             <p class="sec-p sec-italic">Our in-house medium roast is a classic 
@@ -67,7 +68,7 @@
                 It<br> features strong notes of semi-sweet chocolate and caramel,<br>
                  with mild acidity and a bright floral finish.<br><span class="high-light-text">$4.99</span></p>
         </section>
-        <section class="sec white center">
+        <section id="cold-drinks" class="sec white center">
             <h2 class="sec-h2">Cold Drinks</h2>
             <h3 class="sec-h3">Cold Brew</h3>
             <p class="sec-p sec-italic">Our bright and delicious coffee blend,
@@ -79,7 +80,7 @@
                spicy chai tea<br> blended with your choice of milk and poured over
                 ice.<br><span class="high-light-text">$6.99</span></p>
         </section>
-        <section class="sec pink center">
+        <section id="pastries" class="sec pink center">
             <h2 class="sec-h2">Pastries</h2>
             <h3 class="sec-h3">Bacon Oatmeal Raisin Cookie</h3>
             <p class="sec-p sec-italic">An infused bacon, sugar and egg mixture is

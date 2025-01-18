@@ -1,0 +1,98 @@
+/*
+Global Style Ruleset 
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+
+body {
+    font-family: 'Open Sans';
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* 
+Style for nav bar in all pages
+*/
+
+.nav-container {
+    display: inline-block;
+}
+
+.nav-bar {
+    background-color: #FFF0ED;
+    text-decoration: none;
+    color: #393939;
+
+    /* nav bar logo */
+    &__img {
+        width: 70px;
+    }
+    /* "nitro" inside nav bar  */
+    &__h1 {
+        color: #393939;
+        font-size: 4.5rem;
+        font-weight: 300;
+        display: inline-block;
+        margin: 1.8rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    &__ul {
+        display: inline-block;
+    }
+    /* nav bar options */
+    &__li {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-left: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* global back ground colors */
+.pink {
+    background-color: #FFF0ED;
+}
+
+.white {
+    background-color: #fff;
+}
+/*nitro-blue text*/
+.high-light-text {
+    color: #5BACC3;
+}
+//graphite text 
+.graphite-text {
+    color: #393939;
+}
+
+.bld {
+    font-weight: 700;
+}

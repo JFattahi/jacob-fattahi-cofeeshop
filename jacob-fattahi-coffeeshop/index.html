@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./scss/landing.css" />
     <title>Coffee Shop - Menu</title>
   </head>
   <body>
@@ -16,15 +16,20 @@
         <nav class="nav-bar">
           <div class="nav-container">
             <a href="./index.html">
-              <img src="./assets/logos/coffee-beans-logo-and-footer.svg" />
+              <img
+                class="nav-bar__img"
+                src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              />
+              <h1 class="nav-bar__h1">nitro</h1>
             </a>
-            <h1>nitro</h1>
-            <ul class="nav-links">
-              <li><a class="graphite-text" href="./index.html">ABOUT</a></li>
-              <li>
+            <ul class="nav-bar__ul nav-links">
+              <li class="nav-bar__li">
+                <a class="graphite-text" href="./index.html">ABOUT</a>
+              </li>
+              <li class="nav-bar__li">
                 <a class="graphite-text" href="./pages/menu.html">MENU</a>
               </li>
-              <li id="shop-now">
+              <li class="nav-bar__li high-light-text">
                 <a class="high-light-text" href="./pages/menu.html">SHOP NOW</a>
               </li>
             </ul>
@@ -34,17 +39,19 @@
         <div class="banner">
           <div class="written">
             <h2>Nitro Coffee</h2>
-            <p>
+            <p class="written__p">
               Coffee is a brewed drink prepared from<br />
               roasted coffee beans, the seeds of berries<br />
               from certain Coffea species.
             </p>
             <a href="./pages/menu.html">
-              <button class="btn">SHOP NOW</button>
+              <button class="banner__btn">SHOP NOW</button>
             </a>
           </div>
-          <div class="pic">
+
+          <div class="banner__pic">
             <img
+              class="banner__img"
               src="./assets/images/coffeebeans-hero.png"
               alt="a picture of a bag of cofee"
             />
@@ -61,25 +68,62 @@
         <h2>Our Products</h2>
         <div class="card-wrap">
           <div class="card">
-            <div class="img-wrap">
-              <img src="./assets/images/coffeebeans.png" alt="coffee beans" />
+            <div class="upper-card">
+              <div class="img-wrap">
+                <img
+                  class="img-wrap__img"
+                  src="./assets/images/coffeebeans.png"
+                  alt="coffee beans"
+                />
+              </div>
             </div>
-            <h3>Coffee Beans</h3>
-            <p>$18.99</p>
+
+            <div class="lower-card pink">
+              <div class="h3-and-p">
+                <h3 class="our-products__h3">Coffee Beans</h3>
+                <p class="h3-and-p__p gray">Pack of 3</p>
+              </div>
+              <p class="our-products__p bld">$19</p>
+            </div>
           </div>
           <div class="card">
-            <div class="img-wrap">
-              <img src="./assets/images/coldbrew.png" alt="cold brew" />
+            <div class="upper-card">
+              <div class="img-wrap">
+                <img
+                  class="img-wrap__img"
+                  src="./assets/images/coldbrew.png"
+                  alt="cold brew"
+                />
+              </div>
             </div>
-            <h3>Cold Brew</h3>
-            <p>$4.99</p>
+
+            <div class="lower-card pink">
+              <div class="h3-and-p">
+                <h3 class="our-products__h3">Cold Brew</h3>
+                <p class="h3-and-p__p  gray">1 can</p>
+              </div>
+
+              <p class="our-products__p bld">$5</p>
+            </div>
           </div>
           <div class="card">
-            <div class="img-wrap">
-              <img src="./assets/images/inhousebrew.png" alt="In-house brew" />
+            <div class="upper-card">
+              <div class="img-wrap">
+                <img
+                  class="img-wrap__img"
+                  src="./assets/images/inhousebrew.png"
+                  alt="In-house brew"
+                />
+              </div>
             </div>
-            <h3>In-house Brew</h3>
-            <p>$2.99</p>
+
+            <div class="lower-card pink">
+              <div class="h3-and-p">
+                <h3 class="our-products__h3">In-house Brew</h3>
+                <p class="h3-and-p__p  gray">1 cup</p>
+              </div>
+              <p class="our-products__p bld">$3</p>
+            </div>
           </div>
         </div>
 
@@ -110,13 +154,13 @@
         <div class="social sub-foot">
           <h3>Social</h3>
           <div id="logos">
-            <a href="facebook.com">
+            <a href="https://www.facebook.com/">
               <img src="./assets/logos/Facebook-Icon.svg" alt="Facebook" />
             </a>
-            <a href="yelp.com">
+            <a href="https://www.yelp.com/">
               <img src="./assets/logos/Yelp-Icon.svg" alt="Yelp" />
             </a>
-            <a href="instagram.com">
+            <a href="https://www.instagram.com/">
               <img src="./assets/logos/Instagram-Icon.svg" alt="instagram" />
             </a>
           </div>

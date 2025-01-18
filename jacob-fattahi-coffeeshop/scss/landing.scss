@@ -1,7 +1,10 @@
+@use './partials/global' as *;
+
+
 /* 
 Ruleset for index.html
  */
-@import './global.css';
+
 
 /* top prtion of the page containing
  nav bar and the pig pic next with caption on the side */
@@ -17,6 +20,21 @@ Ruleset for index.html
     display: flex;
     justify-content: space-around;
     height: 100%;
+
+    &__img {
+        display: inline-block;
+        height: 45rem;
+    
+    }
+    &__btn {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #FFF;
+        background-color: #5BACC3;
+        height: 4rem;
+        width: 12rem;
+        margin: 1.8rem;
+    }
 }
 
 
@@ -24,42 +42,25 @@ Ruleset for index.html
     align-self: center;
     margin-right: 10rem;
     margin-bottom: 11rem;
-}
 
-.written p {
-    margin: 1.8rem;
-}
-
-
-
-.pic {
-    display: inline-block;
-    margin-top: 5rem;
-}
-
-
-.pic img {
-    display: inline-block;
-    height: 45rem;
+    &__p {
+        margin: 1.8rem;
+    }
+    &__pic {
+        display: inline-block;
+        margin-top: 5rem;
+    }
     
-}
+}            
 
 
-.btn {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #FFF;
-    background-color: #5BACC3;
-    height: 4rem;
-    width:  12rem;
-    margin: 1.8rem;
-}
+
 
 p {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1rem;
-    
+
 }
 
 
@@ -83,10 +84,41 @@ h3 {
     flex-direction: column;
     align-items: center;
 
+    .our-products__h3 {
+        margin: 0;
+        font-size: 2.7rem;
+        font-weight: 300;
+    
+    }
+    
+    
+    .our-products__p {
+        display: inline-block;
+        font-size: 2.7rem;
+        margin: 1rem;
+        color: #5BACC3;
+    
+    }
+
+}
+
+.h3-and-p {
+    display: inline-block;
+    margin: 3rem 1rem;
+}
+
+.h3-and-p__p {
+    margin: 0;
+    
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: center
 }
 
 .card {
-    padding: 3rem 0;
+    // padding: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,27 +127,32 @@ h3 {
     border: 0.5px solid #FFF;
     background-color: #FFF;
     border-radius: 12px;
-    box-shadow: 2px 2px 6px rgb(159, 155, 155);
+    box-shadow: 1.5px 2px 7px 0px rgb(181, 177, 177);
     width: 23vw;
 }
 
 
-.card-wrap {
-    display: flex;
-    justify-content:center
+.img-wrap__img {
+    height: 410px;
+    margin: 2rem;
 }
 
+.upper-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-
-/* .img-wrap {
-    height: 280px;
-    object-fit: cover;
-     overflow: hidden;
-
-} */
-
-.img-wrap img {
-    height: 410px;
+.lower-card {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.5px solid #FFF0ED;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 
@@ -133,30 +170,7 @@ h3 {
     color: #FFF;
     margin: 2rem;
     padding: 1rem 3rem;
-} 
-
-
-#mid h3{
-    
-    font-size: 2.7rem;
-    font-weight: 300;
-    margin: 1.5rem;
-       
 }
-
-
-#mid p {
-    font-size: 2.7rem;
-    font-weight: 500;
-    margin: 1rem;
-    color: #5BACC3;
-}
-
-
-#high-light {
-    color: #5BACC3;
-}
-
 
 
 .discount {
@@ -222,4 +236,9 @@ h3 {
 
 #address {
     margin-left: 15rem;
+}
+
+
+.gray{
+    color: #909090;
 }
