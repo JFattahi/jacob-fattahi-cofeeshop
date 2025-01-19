@@ -129,8 +129,8 @@ Ruleset for index.html
   height: 4rem;
   width: 12rem;
   padding: 0;
+  transition: all 0.5 ease;
 }
-
 .written {
   align-self: center;
   margin-right: 10rem;
@@ -263,6 +263,18 @@ h3 {
   text-align: center;
   width: 100%;
   margin: 0;
+  animation: flash 2.5s ease-in-out infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  100% {
+    background-color: #393939;
+  }
 }
 .discount .discount p span {
   font-weight: 700;
@@ -306,7 +318,11 @@ h3 {
   align-items: center;
 }
 .discount .discount__img-ctn .discount__img {
-  height: 280px;
+  height: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+.discount .discount__img-ctn:hover .discount__img {
+  animation: rotate 2s linear infinite;
 }
 .discount .discount__buttom {
   display: flex;
@@ -314,6 +330,7 @@ h3 {
   width: calc(100% - 20rem);
   background-color: #393939;
   height: 2rem;
+  margin-bottom: 10rem;
 }
 .discount .discount__btn {
   margin: 0;
@@ -376,6 +393,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0s ease;
+}
+.blue-border:active, .blue-border:focus {
+  left: 0px;
+  top: 0px;
 }
 
 .img-border {
@@ -411,4 +433,13 @@ h3 {
   align-self: flex-end;
   position: relative;
   right: -45px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=landing.css.map */

@@ -40,20 +40,17 @@ Style for nav bar and menu bar section
   justify-content: center;
   align-items: center;
 
-  .cofee-circle__frame{
-        height: 100%;
-        width: 100%;
-        border: 5px solid #5bacc3;
-        position: relative;
-        left: -18px;
-        top: -18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  .cofee-circle__frame {
+    height: 100%;
+    width: 100%;
+    border: 5px solid #5bacc3;
+    position: relative;
+    left: -18px;
+    top: -18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-
-
 }
 
 .black-rectangle {
