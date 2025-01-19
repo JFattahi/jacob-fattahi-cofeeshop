@@ -1,244 +1,351 @@
-@use './partials/global' as *;
-
+@use "./partials/global" as *;
 
 /* 
 Ruleset for index.html
  */
 
-
 /* top prtion of the page containing
  nav bar and the pig pic next with caption on the side */
 
-
 .top {
-    height: 100vh;
-
+  height: 100vh;
 }
 
 .banner {
-    background-color: #FFF0ED;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
 
-    &__img {
-        display: inline-block;
-        height: 45rem;
-    
-    }
-    &__btn {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: #FFF;
-        background-color: #5BACC3;
-        height: 4rem;
-        width: 12rem;
-        margin: 1.8rem;
-    }
+  &__img {
+    display: inline-block;
+    height: 46rem;
+    padding-top: 4rem;
+  }
+  &__btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #5bacc3;
+    height: 4rem;
+    width: 12rem;
+    padding: 0;
+  }
 }
-
 
 .written {
-    align-self: center;
-    margin-right: 10rem;
-    margin-bottom: 11rem;
+  align-self: center;
+  margin-right: 10rem;
+  margin-bottom: 11rem;
 
-    &__p {
-        margin: 1.8rem;
-    }
-    &__pic {
-        display: inline-block;
-        margin-top: 5rem;
-    }
-    
-}            
-
-
-
-
-p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 1rem;
-
+  &__p {
+    margin: 1.8rem;
+  }
+  &__pic {
+    display: inline-block;
+    margin-top: 5rem;
+  }
 }
 
-
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem;
+}
 
 h2 {
-    font-size: 4.5rem;
-    font-weight: 300;
-    margin: auto;
-    padding: 1.8rem;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: auto;
+  padding: 1.8rem;
 }
 
 h3 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 1.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1.5rem;
 }
 
-
 .our-products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .our-products__h3 {
-        margin: 0;
-        font-size: 2.7rem;
-        font-weight: 300;
-    
-    }
-    
-    
-    .our-products__p {
-        display: inline-block;
-        font-size: 2.7rem;
-        margin: 1rem;
-        color: #5BACC3;
-    
-    }
+  .our-products__h3 {
+    margin: 0;
+    font-size: 2.7rem;
+    font-weight: 300;
+  }
 
+  .our-products__p {
+    display: inline-block;
+    font-size: 2.7rem;
+    margin: 1rem;
+    color: #5bacc3;
+  }
 }
 
 .h3-and-p {
-    display: inline-block;
-    margin: 3rem 1rem;
+  display: inline-block;
+  margin: 3rem 1rem;
 }
 
 .h3-and-p__p {
-    margin: 0;
-    
+  margin: 0;
 }
 
 .card-wrap {
-    display: flex;
-    justify-content: center
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-    // padding: 3rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 4rem;
-    align-items: center;
-    border: 0.5px solid #FFF;
-    background-color: #FFF;
-    border-radius: 12px;
-    box-shadow: 1.5px 2px 7px 0px rgb(181, 177, 177);
-    width: 23vw;
+  // padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem;
+  align-items: center;
+  border: 0.5px solid #fff;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 1.5px 2px 7px 0px rgb(181, 177, 177);
+  width: 23vw;
 }
 
-
 .img-wrap__img {
-    height: 410px;
-    margin: 2rem;
+  height: 410px;
+  margin: 2rem;
 }
 
 .upper-card {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .lower-card {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 0.5px solid #FFF0ED;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.5px solid #fff0ed;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
-
-
-
 .light-gray {
-    background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .btn-2 {
-    font-size: 2rem;
-    width: auto;
-    height: auto;
-    background-color: #5BACC3;
-    color: #FFF;
-    margin: 2rem;
-    padding: 1rem 3rem;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-bottom: 5rem;
+  width: 230px;
+  height: 75px;
 }
-
-
+// ----------discount Sec---------------
+//       top              buttom
+//    cap   img-ctn
 .discount {
-    height: 50vh;
-    display: flex;
-    background-color: #FFF;
-    justify-content: center;
-    align-items: center;
-    margin: 8rem 0;
+  //height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  //justify-content: center;
+  //align-items: center;
+  margin: 4rem 0 12rem 0;
 
-}
-
-.discount p {
+  // ------------------ discount p--------------------------//
+  .discount__p {
     height: fit-content;
     display: inline-block;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
-    padding: 3rem 6rem;
+    padding: 3rem 4rem;
     background-color: #393939;
-    color: #FFF;
+    color: #fff;
     text-align: center;
-}
+    width: 100%;
+    margin: 0;
+  }
 
-.discount p span {
+  .discount p span {
     font-weight: 700;
-}
+  }
 
-.foot {
+  .discount__top {
     display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 14rem;
+    width: 100%;
+  }
+  .discount__cap {
+    margin-left: 10rem;
 
+    .cap__logo-ctn {
+      display: flex;
+      justify-content: space-between;
+      width: 38rem;
+      margin: 2rem 0;
+      .cap__logo {
+        width: 60px;
+      }
+    }
+
+    & h2 {
+      margin: 0 0;
+      margin-top: 3rem;
+      padding: 0;
+    }
+
+    & p {
+      margin: 1.5rem 0;
+      padding: 0;
+    }
+  }
+
+  .discount__img-ctn {
+    margin-right: 10rem;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-image: url(../assets/images/coldbrewbackground.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .discount__img {
+      height: 280px;
+    }
+  }
+
+  .discount__buttom {
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(100% - 20rem);
+    background-color: #393939;
+    height: 2rem;
+    // margin: 0 10rem;
+  }
+
+//   ---------------discount button ----------------
+  .discount__btn {
+    //padding: 0.9rem 2.5rem;
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 0;
+    width: 250px;
+    height: 75px;
+  }
+} // end of .discount
+
+// -------------------footer---------------
+.foot {
+    width: 100%;
+    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .foot img {
-    height: 70px;
+  height: 70px;
 }
-
 
 .sub-foot {
-    margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-
 .sub-foot p {
-    margin: 0;
-    font-weight: 400;
-    font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 #logos {
-    display: inline-block;
+  display: inline-block;
 }
 
 .hours span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .sub-foot h3 {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #address {
-    margin-left: 15rem;
+//   margin-left: 15rem;
+}
+
+.gray {
+  color: #909090;
 }
 
 
-.gray{
-    color: #909090;
+.blue-border {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #393939;
+    position: relative;
+    left: -6px;
+    top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.img-border {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 6px solid #5bacc3;
+    position: relative;
+    left: -23px;
+    top: -23px;
+}
+
+.b-img {
+    opacity: 25%;
+    width: 140px;
+    height:140px;
+    background-image: url(../assets/logos/coffee-beans-logo-and-footer.svg);
+    background-size: cover;
+}
+
+.left-b-img {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    position: relative;
+    left: -43px;
+
+}
+
+.right-b-img {
+    margin-bottom: 2rem;
+    align-self: flex-end;
+    position: relative;
+    right: -45px;
+
 }

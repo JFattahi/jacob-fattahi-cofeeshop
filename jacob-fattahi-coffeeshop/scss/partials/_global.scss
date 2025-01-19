@@ -3,96 +3,115 @@ Global Style Ruleset
 
 */
 
-
 * {
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
-
 
 body {
-    font-family: 'Open Sans';
+  font-family: "Open Sans";
+  margin: 0;
 }
-
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
 
 h1,
 h2,
 h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 
 /* 
 Style for nav bar in all pages
 */
 
 .nav-container {
-    display: inline-block;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-bar {
-    background-color: #FFF0ED;
-    text-decoration: none;
+  background-color: #fff0ed;
+  text-decoration: none;
+  color: #393939;
+
+  /* nav bar logo */
+  &__img {
+    width: 70px;
+  }
+  /* "nitro" inside nav bar  */
+  &__h1 {
     color: #393939;
+    font-size: 4rem;
+    font-weight: 300;
+    display: inline-block;
+  }
 
-    /* nav bar logo */
-    &__img {
-        width: 70px;
-    }
-    /* "nitro" inside nav bar  */
-    &__h1 {
-        color: #393939;
-        font-size: 4.5rem;
-        font-weight: 300;
-        display: inline-block;
-        margin: 1.8rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    &__ul {
-        display: inline-block;
-    }
-    /* nav bar options */
-    &__li {
-        list-style-type: none;
-        display: inline-block;
-        font-size: 1.8rem;
-        font-weight: 400;
-        margin-left: 2rem;
-    }
+  &__ul {
+    display: inline-block;
+    // margin-bottom: 1.8rem;
+    margin-right: 3rem;
+    margin-top: 2.7rem;
+  }
+
+  /* nav bar options */
+  &__li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 2rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+  }
 }
-
-
-
-
-
-
-
 
 /* global back ground colors */
 .pink {
-    background-color: #FFF0ED;
+  background-color: #fff0ed;
 }
 
 .white {
-    background-color: #fff;
+  background-color: #fff;
 }
 /*nitro-blue text*/
 .high-light-text {
-    color: #5BACC3;
+  color: #5bacc3;
 }
-//graphite text 
+//graphite text
 .graphite-text {
-    color: #393939;
+  color: #393939;
 }
 
 .bld {
-    font-weight: 700;
+  font-weight: 700;
 }
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #5bacc3;
+    margin: 1.8rem;
+    
+}
+
+// .blue-border {
+//     height: 100%;
+//     width: 100%;
+//     border: 5px solid #5bacc3;
+//     position: relative;
+
+// }

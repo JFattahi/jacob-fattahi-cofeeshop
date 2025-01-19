@@ -1,7 +1,7 @@
 /* 
 Ruleset for menumargin: auto;.html
  */
-@import './global.css';
+@import "./global.css";
 /*
 Global Style Ruleset 
 
@@ -13,6 +13,7 @@ Global Style Ruleset
 
 body {
   font-family: "Open Sans";
+  margin: 0;
 }
 
 a {
@@ -31,11 +32,15 @@ h3 {
 Style for nav bar in all pages
 */
 .nav-container {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-bar {
-  background-color: #FFF0ED;
+  background-color: #fff0ed;
   text-decoration: none;
   color: #393939;
   /* nav bar logo */
@@ -47,27 +52,31 @@ Style for nav bar in all pages
 }
 .nav-bar__h1 {
   color: #393939;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 300;
   display: inline-block;
-  margin: 1.8rem;
-  margin-right: 0;
-  margin-left: 0;
 }
 .nav-bar__ul {
   display: inline-block;
+  margin-right: 3rem;
+  margin-top: 2.7rem;
 }
 .nav-bar__li {
   list-style-type: none;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-left: 2rem;
+}
+.nav-bar__logo {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
 }
 
 /* global back ground colors */
 .pink {
-  background-color: #FFF0ED;
+  background-color: #fff0ed;
 }
 
 .white {
@@ -76,7 +85,7 @@ Style for nav bar in all pages
 
 /*nitro-blue text*/
 .high-light-text {
-  color: #5BACC3;
+  color: #5bacc3;
 }
 
 .graphite-text {
@@ -85,6 +94,15 @@ Style for nav bar in all pages
 
 .bld {
   font-weight: 700;
+}
+
+.btn {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #5bacc3;
+  margin: 1.8rem;
 }
 
 /* 
@@ -106,23 +124,40 @@ nav bar + pic + menu bar
 Style for nav bar and menu bar section
 */
 .upper-top {
-  height: 90vh;
+  height: 92vh;
   background-color: #fff;
 }
 
 /* div withbig coffee circle picture */
 .coffee-circle {
   background-image: url(../assets/images/coffee-circle.jpg);
-  height: 100%;
+  height: 84%;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coffee-circle .cofee-circle__frame {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #5bacc3;
+  position: relative;
+  left: -18px;
+  top: -18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black-rectangle {
   background-color: #393939;
-  height: 25%;
-  width: 20%;
+  height: 35%;
+  width: 19%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black-rectangle h1 {
@@ -135,7 +170,7 @@ Style for nav bar and menu bar section
 
 /* HOT DRINKS | COLD DRINKS | PASTRIES */
 .menu-bar {
-  height: 10vh;
+  height: 8vh;
   background-color: rgb(44, 44, 44);
   display: flex;
   justify-content: center;
@@ -151,7 +186,7 @@ Style for nav bar and menu bar section
 
 /* HOT DRINKS | COLD DRINKS | PASTRIES */
 #bar-paragraph span {
-  color: #5BACC3;
+  color: #5bacc3;
   font-size: 2rem;
   font-weight: 900;
   font-style: bolder;
@@ -163,7 +198,7 @@ Style for nav bar and menu bar section
 }
 
 #shop-now {
-  color: #5BACC3;
+  color: #5bacc3;
 }
 
 .sec-h2 {
@@ -182,7 +217,6 @@ Style for nav bar and menu bar section
 .sec-p {
   font-size: 1.5rem;
   font-weight: 400;
-  padding: auto;
   margin: 1rem;
 }
 

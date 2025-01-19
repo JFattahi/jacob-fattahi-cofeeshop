@@ -15,14 +15,16 @@
       <div class="top">
         <nav class="nav-bar">
           <div class="nav-container">
-            <a href="./index.html">
-              <img
-                class="nav-bar__img"
-                src="./assets/logos/coffee-beans-logo-and-footer.svg"
-              />
-              <h1 class="nav-bar__h1">nitro</h1>
+            <a class="nav-bar__a" href="./index.html">
+              <div class="nav-bar__logo">
+                <img
+                  class="nav-bar__img"
+                  src="./assets/logos/coffee-beans-logo-and-footer.svg"
+                />
+                <h1 class="nav-bar__h1">nitro</h1>
+              </div>
             </a>
-            <ul class="nav-bar__ul nav-links">
+            <ul class="nav-bar__ul">
               <li class="nav-bar__li">
                 <a class="graphite-text" href="./index.html">ABOUT</a>
               </li>
@@ -45,7 +47,7 @@
               from certain Coffea species.
             </p>
             <a href="./pages/menu.html">
-              <button class="banner__btn">SHOP NOW</button>
+              <button class="btn banner__btn"><div class="blue-border shop-now">SHOP NOW</div></button>
             </a>
           </div>
 
@@ -100,7 +102,7 @@
             <div class="lower-card pink">
               <div class="h3-and-p">
                 <h3 class="our-products__h3">Cold Brew</h3>
-                <p class="h3-and-p__p  gray">1 can</p>
+                <p class="h3-and-p__p gray">1 can</p>
               </div>
 
               <p class="our-products__p bld">$5</p>
@@ -120,7 +122,7 @@
             <div class="lower-card pink">
               <div class="h3-and-p">
                 <h3 class="our-products__h3">In-house Brew</h3>
-                <p class="h3-and-p__p  gray">1 cup</p>
+                <p class="h3-and-p__p gray">1 cup</p>
               </div>
               <p class="our-products__p bld">$3</p>
             </div>
@@ -128,17 +130,63 @@
         </div>
 
         <a href="./pages/menu.html">
-          <button class="btn-2">VIEW ALL</button>
+          <button class="btn btn-2"><div class="blue-border">VIEW ALL</div></button>
         </a>
       </section>
       <!-- end of sec1 -->
 
       <section class="discount">
-        <p>Get 20% off your first order with code: <span>FirstNitro</span></p>
+        <!-- discount img and caption -->
+        <div class="discount__top">
+          <div class="discount__cap">
+            <h2>We're Different</h2>
+            <p>
+              We grow and roast our own beans. Every bean, every<br />
+              cup, every step of the way, we strive for excellence.
+            </p>
+            <div class="cap__logo-ctn">
+              <img
+                class="cap__logo"
+                src="./assets/logos/planting.svg"
+                alt="planting"
+              />
+              <img
+                class="cap__logo"
+                src="./assets/logos/coffee-beans.svg"
+                alt="cofee beans"
+              />
+              <img
+                class="cap__logo"
+                src="./assets/logos/coffee-cup.svg"
+                alt="cofee cup"
+              />
+            </div>
+            <a href="./index.html" class="discount__link">
+              <button class="btn discount__btn"><div class="blue-border">Learn More</div></button>
+            </a>
+          </div>
+          <div class="discount__img-ctn">
+            <div class="img-border">
+              <img
+                class="discount__img"
+                src="./assets/images/tiltedcan.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- discpunt bar -->
+        <div class="discount__buttom">
+          <p class="discount__p">
+            Get 20% off your first order with code: <span>FirstNitro</span>
+          </p>
+        </div>
       </section>
       <!-- end of discount -->
 
       <footer class="foot pink">
+        <div class="left-b-img b-img"></div>
         <div id="address" class="address sub-foot">
           <h3>Address</h3>
           <p>
@@ -165,7 +213,12 @@
             </a>
           </div>
         </div>
+        <div class="b-img right-b-img"></div>
       </footer>
+
+
+
+
     </div>
   </body>
 </html>
